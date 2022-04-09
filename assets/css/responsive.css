@@ -1,0 +1,130 @@
+@media (max-width: 1023px) {
+    section {
+        padding: 1.6rem;
+    }
+    
+    /* Header */
+    .header-1,
+    .header-2,
+    .header-3 {
+        padding: 1.6rem;
+    }
+
+    /* Home */
+    .home__slide {
+        background-position: right;
+        z-index: -1;
+    }
+
+    .home__slide::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    .home__slide-content {
+        z-index: 2;
+    }
+
+    /* Banner */
+    .banner__container {
+        margin-top: 1.6rem;
+    }
+
+    /* Category */
+    .category__box-btn {
+        width: 100%;
+    }
+
+    /* Deal */
+    .deal__count-down-day,
+    .deal__count-down-hour,
+    .deal__count-down-minute,
+    .deal__count-down-second {
+        font-size: 3rem;
+    }
+
+    .deal__img-wrap {
+        margin-top: 1.6rem;
+    }
+
+    .deal__count-down-btn {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact__map {
+        min-height: 36rem;
+    }
+
+    .contact__form {
+        padding-left: 1.6rem;
+    }
+
+    .contact__btn{
+        width: 100%;
+    }
+}
+
+@media (max-width: 739px) {
+    .header-1 {
+        display: none;
+    }
+
+    .header-2 {
+        flex-direction: column;
+    }
+
+    .header-2__search {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .header-3__menu {
+        display: inline-block;
+    }
+
+    .header-3__navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        padding: 1rem 2rem;
+        border-top: var(--box-shadow);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header-3__navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header-3__navbar-link {
+        display: block;
+        margin: 1.4rem;
+        padding: 1.4rem;
+        border-radius: .4rem;
+        border: var(--border-color);
+        text-align: center;
+        background: var(--white-color);
+    }
+
+    /* Deal */
+    .deal__count-down {
+        justify-content: space-between;
+    }
+
+    .deal__count-down-box {
+        margin-right: unset;
+    }
+
+    /* Footer */
+    .footer__box {
+        margin-top: 2rem;
+    }
+}
